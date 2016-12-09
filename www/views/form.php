@@ -1,7 +1,9 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Danil
- * Date: 09.12.2016
- * Time: 15:36
- */
+<form action="/first.local/www/add.php" method="post" enctype="multipart/form-data">
+    <label for="title">Название</label>
+    <input type="text" id="title" name="title">
+    <br>
+    <label for="image">Файл</label>
+    <input type="file" id="image" name="image">
+    <br>
+    <input type="submit">
+</form>
