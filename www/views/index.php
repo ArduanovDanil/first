@@ -5,8 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-<?php foreach ($items as $item):
-    echo $item['title'];
-        endforeach;?>
+
+<table border="1">
+    <tr>
+        <th>Название</th>
+    </tr>
+    <?php foreach ($items as $item): ?>
+    <tr>
+        <td><?php echo $item['title']; ?></td>
+    </tr>
+        <?php endforeach;?>
+    </table>
+
+<a href="/first.local/www/add.php">Добавить фото</a>
+<a href="add.php">Добавить фото</a>
+<a href="./add.php">Добавить фото</a>
+<?php echo __DIR__ ?>
 </body>
 </html>
